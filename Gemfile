@@ -10,6 +10,9 @@ gem 'pg', '0.18.1', group: :production
 # Rails 12 Factor
 gem 'rails_12factor', group: :production
 
+#Add Bonsai hosted Elastic Search
+gem 'bonsai-elasticsearch-rails'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
