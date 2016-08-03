@@ -11,7 +11,7 @@ gem 'pg', '0.18.1', group: :production
 gem 'rails_12factor', group: :production
 
 #Add Bonsai hosted Elastic Search
-gem 'bonsai-elasticsearch-rails'
+#gem 'bonsai-elasticsearch-rails'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
