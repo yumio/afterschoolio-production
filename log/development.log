@@ -752,3 +752,84 @@ Migrating to CreateReviews (20160803182243)
             FROM sqlite_temp_master
             WHERE name='index_reviews_on_org_id' AND type='index'
 [0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_org_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_org_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+DEPRECATION WARNING: Passing #original_exception is deprecated and has no effect. Exceptions will automatically capture the original exception. (called from load at /Users/yumio/.rbenv/versions/2.3.1/bin/rake:23)
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateOrgs (20160803181851)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "orgs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "org_name" varchar, "org_street" varchar, "org_city" varchar, "org_state" varchar, "org_zip" varchar, "org_phone" varchar, "org_url" varchar, "org_email" varchar, "org_description" varchar, "org_imageurl" varchar, "org_category" varchar, "org_subcategory" varchar, "org_tag" varchar, "org_kidgrade_start" integer, "org_kidgrade_end" integer, "org_featured" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160803181851"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateReviews (20160803182243)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "review_author" varchar, "review_content" varchar, "org_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_reviews_on_org_id" ON "reviews" ("org_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160803182243"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-08-04 11:38:06 UTC], ["updated_at", 2016-08-04 11:38:06 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_org_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_org_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_org_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_org_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.9ms)[0m  [1m[32mINSERT INTO "orgs" ("org_name", "org_street", "org_city", "org_state", "org_zip", "org_phone", "org_url", "org_email", "org_description", "org_imageurl", "org_category", "org_subcategory", "org_tag", "org_kidgrade_start", "org_kidgrade_end", "org_featured", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["org_name", "Russian School of Math - Lexington"], ["org_street", "4 Militia Drive, Suite 8 and 9"], ["org_city", "Lexington"], ["org_state", "MA"], ["org_zip", "02421"], ["org_phone", "781-859-7444"], ["org_url", "http://www.russianschool.com/location/lexington"], ["org_email", "lexington@russianschool.com"], ["org_description", "Since opening in 2010, RSM-Lexington has leveraged the Russian School of Mathematics' award-winning math curriculum and teaching methodology to help K-12 students build excellence in math and develop lifelong critical thinking skills.\nRSM-Lexington is a great learning community where students are not only active participants in their own learning but instrumental in helping their fellow students succeed.Rather than focusing solely on math tutoring in Lexington, RSM provides an enriching classroom experience to push students of all levels ahead.\nToday RSM-Lexington enrolls more than 1000 students from Lexington, Winchester, Belmont, Arlington, Burlington, Bedford, Woburn, Cambridge, Waltham, Medford, Melrose, Lincoln and Somerville.  To better serve Lexington families, our school is conveniently located at 4 Militia Drive, which is now a designated bus stop thanks to the Lexington Public Schools Transportation Department."], ["org_imageurl", "https://dl.dropboxusercontent.com/u/61233574/LexingtonRSM.png"], ["org_category", "academics"], ["org_subcategory", "math"], ["org_tag", "award-winning"], ["org_kidgrade_start", 0], ["org_kidgrade_end", 12], ["org_featured", true], ["created_at", 2016-08-04 11:48:40 UTC], ["updated_at", 2016-08-04 11:48:40 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "orgs" ("org_name", "org_street", "org_city", "org_state", "org_zip", "org_phone", "org_url", "org_email", "org_description", "org_imageurl", "org_category", "org_subcategory", "org_tag", "org_kidgrade_start", "org_kidgrade_end", "org_featured", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["org_name", "Kidstock"], ["org_street", "50 Cross St"], ["org_city", "Winchester"], ["org_state", "MA"], ["org_zip", "01890"], ["org_phone", "781-729-5543"], ["org_url", "https://www.kidstocktheater.com/"], ["org_email", "#"], ["org_description", "We believe every child is a natural storyteller, with the aspirations and ability to perform onstage. Kidstock! provides a safe environment to explore new challenges alongside peers, feel supported by teachers and be surrounded by the ample resources of a professional theater. Every student is a “star” in our productions and we pride ourselves on offering a unique curriculum experience that is as engaging for a “seasoned theater veteran” as it is for a newcomer to the world of the stage."], ["org_imageurl", "https://dl.dropboxusercontent.com/u/61233574/KidstockWinchester.png"], ["org_category", "art"], ["org_subcategory", "theater"], ["org_tag", "#"], ["org_kidgrade_start", 1], ["org_kidgrade_end", 12], ["org_featured", false], ["created_at", 2016-08-04 11:48:40 UTC], ["updated_at", 2016-08-04 11:48:40 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrg Load (0.2ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (3.7ms)[0m  [1m[32mINSERT INTO "reviews" ("review_author", "review_content", "org_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["review_author", "YS"], ["review_content", "The school is great. My daughter really enjoys learning math here."], ["org_id", 1], ["created_at", 2016-08-04 11:48:40 UTC], ["updated_at", 2016-08-04 11:48:40 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrg Load (0.1ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("review_author", "review_content", "org_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["review_author", "YS"], ["review_content", "My son really enjoyed performing with the group over the summer. I wish they had more programs during the school year."], ["org_id", 2], ["created_at", 2016-08-04 11:48:40 UTC], ["updated_at", 2016-08-04 11:48:40 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m

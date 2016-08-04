@@ -1,4 +1,4 @@
-class Org < ApplicationRecord::Base
+class Org < ApplicationRecord
 	has_many :reviews
 
 end

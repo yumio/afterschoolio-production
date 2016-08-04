@@ -12,13 +12,6 @@
 
 ActiveRecord::Schema.define(version: 20160803182243) do
 
-  create_table "articles", force: :cascade do |t|
-    t.string   "title"
-    t.text     "text"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "orgs", force: :cascade do |t|
     t.string   "org_name"
     t.string   "org_street"
@@ -33,9 +26,11 @@ ActiveRecord::Schema.define(version: 20160803182243) do
     t.string   "org_category"
     t.string   "org_subcategory"
     t.string   "org_tag"
-    t.string   "org_kidgrade"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.integer  "org_kidgrade_start"
+    t.integer  "org_kidgrade_end"
+    t.boolean  "org_featured"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
   end
 
   create_table "reviews", force: :cascade do |t|

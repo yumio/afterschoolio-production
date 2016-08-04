@@ -1,3 +1,3 @@
-class Review < ApplicationRecord::Base
+class Review < ApplicationRecord
 	belongs_to :org
 end
