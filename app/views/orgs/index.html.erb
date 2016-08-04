@@ -1,0 +1,24 @@
+<% @orgs.each do |org| %>
+<div class="col-md-3">
+	<ul>
+		<li><%= org.org_name %></li>
+		<li><%= org.org_street %></li>
+		<li><%= org.org_city %></li>
+		<li><%= org.org_state %></li>
+		<li><%= org.org_zip %></li>
+		<li><%= org.org_phone %></li>
+		<li><%= org.org_url %></li>
+		<li><%= org.org_email %></li>
+		<li><%= org.org_category %></li>
+		<li><%= org.org_subcategory %></li>
+		<li><%= org.org_kidgrade_start %></li>
+		<li><%= org.org_kidgrade_end %></li>
+	</ul>
+	<img src=<%= org.org_imageurl %> >
+    <p><%= org.org_description %><p>
+
+</div>
+
+
+
+<% end  %>
