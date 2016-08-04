@@ -1302,3 +1302,840 @@ Processing by OrgsController#show as HTML
 Completed 200 OK in 31ms (Views: 27.0ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/orgs/1" for ::1 at 2016-08-04 10:37:47 -0400
+Processing by OrgsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOrg Load (0.1ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering orgs/show.html.erb within layouts/application
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."org_id" = ?[0m  [["org_id", 1]]
+  Rendered orgs/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 43ms (Views: 37.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/submit" for ::1 at 2016-08-04 11:28:09 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/submit"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered collection of /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [8 times] (5.9ms)
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.2ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (147.8ms)
+Started GET "/new" for ::1 at 2016-08-04 11:29:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered collection of /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [8 times] (5.3ms)
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (140.9ms)
+Started GET "/orgs/new" for ::1 at 2016-08-04 11:29:39 -0400
+Processing by OrgsController#new as HTML
+  Rendering orgs/new.html.erb within layouts/application
+  Rendered orgs/new.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for(@org) do |f| %>
+    2: <%= f.label :org %> <br>
+    3: <%= f.text_area :org_name %>
+    4: 
+  
+app/views/orgs/new.html.erb:1:in `_app_views_orgs_new_html_erb___3505964837815823107_70146635747920'
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (101.7ms)
+Started GET "/orgs/new" for ::1 at 2016-08-04 11:32:46 -0400
+Processing by OrgsController#new as HTML
+  Rendering orgs/new.html.erb within layouts/application
+  Rendered orgs/new.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 97ms (Views: 63.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/orgs" for ::1 at 2016-08-04 11:32:53 -0400
+Processing by OrgsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7IFJoVPoTxgu0HfxsRfA0tkpVmvkAsC4MoMQQbQhkm1MI5jJa4tTZDcFksGAjlQp2v+SLk8xj2MhDIdt9F4Z9w==", "org"=>{"org_name"=>""}, "commit"=>"Create"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: org_name):
+  
+app/controllers/orgs_controller.rb:26:in `org_params'
+app/controllers/orgs_controller.rb:16:in `create'
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (94.3ms)
+Started GET "/orgs/new" for ::1 at 2016-08-04 11:50:08 -0400
+Processing by OrgsController#new as HTML
+  Rendering orgs/new.html.erb within layouts/application
+  Rendered orgs/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 41ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orgs/new" for ::1 at 2016-08-04 11:53:03 -0400
+Processing by OrgsController#new as HTML
+  Rendering orgs/new.html.erb within layouts/application
+  Rendered orgs/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orgs" for ::1 at 2016-08-04 11:53:31 -0400
+Processing by OrgsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"03NQtW5pca/urcpabocNWZi1icGo65lbeeY407F6vbJz0YHdVgpt0/d4L2pfHpmim2NNhAPY1oBqaa//8QU2KA==", "org"=>{"org_name"=>"", "org_street"=>"Testing", "org_city"=>"", "org_state"=>"", "org_zip"=>"", "org_phone"=>"", "org_url"=>"", "org_email"=>"", "org_description"=>"", "org_imageurl"=>"", "org_category"=>"", "org_subcategory"=>"", "org_tag"=>"", "org_kidgrade_start"=>"", "org_kidgrade_end"=>"", "org_featured"=>"0"}, "commit"=>"Create"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: org_name):
+  
+app/controllers/orgs_controller.rb:26:in `org_params'
+app/controllers/orgs_controller.rb:16:in `create'
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.6ms)
+Started GET "/orgs/new" for ::1 at 2016-08-04 12:00:43 -0400
+Processing by OrgsController#new as HTML
+  Rendering orgs/new.html.erb within layouts/application
+  Rendered orgs/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orgs/new" for ::1 at 2016-08-04 12:01:04 -0400
+Processing by OrgsController#new as HTML
+  Rendering orgs/new.html.erb within layouts/application
+  Rendered orgs/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 33ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orgs/new" for ::1 at 2016-08-04 12:01:22 -0400
+Processing by OrgsController#new as HTML
+  Rendering orgs/new.html.erb within layouts/application
+  Rendered orgs/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orgs/new" for ::1 at 2016-08-04 12:19:34 -0400
+Processing by OrgsController#new as HTML
+  Rendering orgs/new.html.erb within layouts/application
+  Rendered orgs/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 41ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orgs/new" for ::1 at 2016-08-04 12:24:08 -0400
+Processing by OrgsController#new as HTML
+  Rendering orgs/new.html.erb within layouts/application
+  Rendered orgs/new.html.erb within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/yumio/afterschoolio/app/views/orgs/new.html.erb:15: syntax error, unexpected ':', expecting ')'
+...,2],["Arts",3],["Music",4]])) :org_category );@output_buffer...
+...                               ^):
+  
+app/views/orgs/new.html.erb:15: syntax error, unexpected ':', expecting ')'
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.6ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (98.1ms)
+Started GET "/orgs/new" for ::1 at 2016-08-04 12:25:23 -0400
+Processing by OrgsController#new as HTML
+  Rendering orgs/new.html.erb within layouts/application
+  Rendered orgs/new.html.erb within layouts/application (69.5ms)
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `select_tag' for #<ActionView::Helpers::FormBuilder:0x007f988d82b310>
+Did you mean?  select):
+    12: <li>Email <%= f.text_area :org_email %></li>
+    13: <li>Description <%= f.text_area :org_description, size: "40x10" %></li>
+    14: <li>Image URL <%= f.url_field :org_imageurl %></li>
+    15: <li>Category <%= f.select_tag(:org_category, options_for_select([["Academics",1],["Sports",2],["Arts",3],["Music",4]])) %></li>
+    16: <li>Subcategory <%= f.text_area :org_subcategory %></li>
+    17: <li>Tags <%= f.text_field :org_tag %></li>
+    18: <li>Kid Start Grade <%= f.number_field :org_kidgrade_start %></li>
+  
+app/views/orgs/new.html.erb:15:in `block in _app_views_orgs_new_html_erb___3505964837815823107_70146593127880'
+app/views/orgs/new.html.erb:1:in `_app_views_orgs_new_html_erb___3505964837815823107_70146593127880'
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.9ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (100.0ms)
+Started GET "/orgs/new" for ::1 at 2016-08-04 12:25:53 -0400
+Processing by OrgsController#new as HTML
+  Rendering orgs/new.html.erb within layouts/application
+  Rendered orgs/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 40ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orgs/new" for ::1 at 2016-08-04 12:39:26 -0400
+Processing by OrgsController#new as HTML
+  Rendering orgs/new.html.erb within layouts/application
+  Rendered orgs/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 46ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orgs/new" for ::1 at 2016-08-04 12:40:46 -0400
+Processing by OrgsController#new as HTML
+  Rendering orgs/new.html.erb within layouts/application
+  Rendered orgs/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orgs/new" for ::1 at 2016-08-04 12:40:58 -0400
+Processing by OrgsController#new as HTML
+  Rendering orgs/new.html.erb within layouts/application
+  Rendered orgs/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orgs/new" for ::1 at 2016-08-04 12:41:16 -0400
+Processing by OrgsController#new as HTML
+  Rendering orgs/new.html.erb within layouts/application
+  Rendered orgs/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orgs/new" for ::1 at 2016-08-04 12:49:07 -0400
+Processing by OrgsController#new as HTML
+  Rendering orgs/new.html.erb within layouts/application
+  Rendered orgs/new.html.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `merge' for true:TrueClass):
+    17: <li>Tags <%= f.text_field :org_tag %></li>
+    18: <li>Kid Start Grade <%= f.number_field :org_kidgrade_start %></li>
+    19: <li>Kid End Grade <%= f.number_field :org_kidgrade_end %></li>
+    20: <li>Featured? <%= f.check_box :org_featured, true, false %></li>
+    21: </ul>
+    22: 
+    23: <div class="actions">
+  
+app/views/orgs/new.html.erb:20:in `block in _app_views_orgs_new_html_erb___3505964837815823107_70146632063960'
+app/views/orgs/new.html.erb:1:in `_app_views_orgs_new_html_erb___3505964837815823107_70146632063960'
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (98.2ms)
+Started GET "/orgs/new" for ::1 at 2016-08-04 12:49:27 -0400
+Processing by OrgsController#new as HTML
+  Rendering orgs/new.html.erb within layouts/application
+  Rendered orgs/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 45ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orgs/new" for ::1 at 2016-08-04 13:00:02 -0400
+Processing by OrgsController#new as HTML
+  Rendering orgs/new.html.erb within layouts/application
+  Rendered orgs/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 44ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orgs/1/edit" for ::1 at 2016-08-04 13:00:08 -0400
+Processing by OrgsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering orgs/edit.html.erb within layouts/application
+  Rendered orgs/edit.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    3: 
+    4: <div class="row">
+    5:   <div class="col-md-6 col-md-offset-3">
+    6:     <%= form_for(@org) do |f| %>
+    7: 	<ul>
+    8: 		<%= f.label :org %> <br>
+    9: 		<li> Org Name <%= f.text_field :org_name %></li>
+  
+app/views/orgs/edit.html.erb:6:in `_app_views_orgs_edit_html_erb___2765148535554172536_70146631464600'
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.1ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (102.9ms)
+Started GET "/orgs/1/edit" for ::1 at 2016-08-04 13:00:52 -0400
+Processing by OrgsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOrg Load (0.2ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering orgs/edit.html.erb within layouts/application
+  Rendered orgs/edit.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 63ms (Views: 36.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/orgs/2/edit" for ::1 at 2016-08-04 13:01:08 -0400
+Processing by OrgsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrg Load (0.4ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering orgs/edit.html.erb within layouts/application
+  Rendered orgs/edit.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 36ms (Views: 33.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orgs/2/edit" for ::1 at 2016-08-04 13:07:10 -0400
+Processing by OrgsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrg Load (0.6ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering orgs/edit.html.erb within layouts/application
+  Rendered orgs/edit.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 67ms (Views: 42.0ms | ActiveRecord: 1.4ms)
+
+
+Started PATCH "/orgs/1" for ::1 at 2016-08-04 13:07:23 -0400
+Processing by OrgsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lQFCGzKeoCMvdCknhp7jpkm4H0tTf3oBXfn728kXJ8I1o5NzCv28XzahzBe3B3ddSm7bDvhMNdpOdmz3iWisWA==", "org"=>{"org_name"=>"Russian School of Math - Lexington", "org_street"=>"4 Militia Drive, Suite 8 and 9", "org_city"=>"Lexington", "org_state"=>"2", "org_zip"=>"02421", "org_phone"=>"781-859-7444", "org_url"=>"http://www.russianschool.com/location/lexington", "org_email"=>"lexington@russianschool.com", "org_description"=>"Edit Since opening in 2010, RSM-Lexington has leveraged the Russian School of Mathematics' award-winning math curriculum and teaching methodology to help K-12 students build excellence in math and develop lifelong critical thinking skills.\r\nRSM-Lexington is a great learning community where students are not only active participants in their own learning but instrumental in helping their fellow students succeed.Rather than focusing solely on math tutoring in Lexington, RSM provides an enriching classroom experience to push students of all levels ahead.\r\nToday RSM-Lexington enrolls more than 1000 students from Lexington, Winchester, Belmont, Arlington, Burlington, Bedford, Woburn, Cambridge, Waltham, Medford, Melrose, Lincoln and Somerville.  To better serve Lexington families, our school is conveniently located at 4 Militia Drive, which is now a designated bus stop thanks to the Lexington Public Schools Transportation Department.", "org_imageurl"=>"https://dl.dropboxusercontent.com/u/61233574/LexingtonRSM.png", "org_category"=>"1", "org_subcategory"=>"1", "org_tag"=>"award-winning", "org_kidgrade_start"=>"0", "org_kidgrade_end"=>"12", "org_featured"=>"1"}, "commit"=>"Save changes", "id"=>"1"}
+  [1m[36mOrg Load (0.4ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: org_name):
+  
+app/controllers/orgs_controller.rb:41:in `org_params'
+app/controllers/orgs_controller.rb:30:in `update'
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.7ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (98.0ms)
+Started PATCH "/orgs/1" for ::1 at 2016-08-04 13:08:44 -0400
+  
+SyntaxError (/Users/yumio/afterschoolio/app/controllers/orgs_controller.rb:41: syntax error, unexpected ')', expecting =>):
+  
+app/controllers/orgs_controller.rb:41: syntax error, unexpected ')', expecting =>
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.3ms)
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (95.8ms)
+Started PATCH "/orgs/1" for ::1 at 2016-08-04 13:09:07 -0400
+Processing by OrgsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lQFCGzKeoCMvdCknhp7jpkm4H0tTf3oBXfn728kXJ8I1o5NzCv28XzahzBe3B3ddSm7bDvhMNdpOdmz3iWisWA==", "org"=>{"org_name"=>"Russian School of Math - Lexington", "org_street"=>"4 Militia Drive, Suite 8 and 9", "org_city"=>"Lexington", "org_state"=>"2", "org_zip"=>"02421", "org_phone"=>"781-859-7444", "org_url"=>"http://www.russianschool.com/location/lexington", "org_email"=>"lexington@russianschool.com", "org_description"=>"Edited Since opening in 2010, RSM-Lexington has leveraged the Russian School of Mathematics' award-winning math curriculum and teaching methodology to help K-12 students build excellence in math and develop lifelong critical thinking skills.\r\nRSM-Lexington is a great learning community where students are not only active participants in their own learning but instrumental in helping their fellow students succeed.Rather than focusing solely on math tutoring in Lexington, RSM provides an enriching classroom experience to push students of all levels ahead.\r\nToday RSM-Lexington enrolls more than 1000 students from Lexington, Winchester, Belmont, Arlington, Burlington, Bedford, Woburn, Cambridge, Waltham, Medford, Melrose, Lincoln and Somerville.  To better serve Lexington families, our school is conveniently located at 4 Militia Drive, which is now a designated bus stop thanks to the Lexington Public Schools Transportation Department.", "org_imageurl"=>"https://dl.dropboxusercontent.com/u/61233574/LexingtonRSM.png", "org_category"=>"1", "org_subcategory"=>"1", "org_tag"=>"award-winning", "org_kidgrade_start"=>"0", "org_kidgrade_end"=>"12", "org_featured"=>"1"}, "commit"=>"Save changes", "id"=>"1"}
+  [1m[36mOrg Load (0.3ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: org_street, org_city, org_state, org_zip, org_phone, org_url, org_email, org_imageurl, org_category, org_subcategory, org_tag, org_kidgrade_start, org_kidgrade_end, org_featured
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[33mUPDATE "orgs" SET "org_description" = ?, "updated_at" = ? WHERE "orgs"."id" = ?[0m  [["org_description", "Edited Since opening in 2010, RSM-Lexington has leveraged the Russian School of Mathematics' award-winning math curriculum and teaching methodology to help K-12 students build excellence in math and develop lifelong critical thinking skills.\r\nRSM-Lexington is a great learning community where students are not only active participants in their own learning but instrumental in helping their fellow students succeed.Rather than focusing solely on math tutoring in Lexington, RSM provides an enriching classroom experience to push students of all levels ahead.\r\nToday RSM-Lexington enrolls more than 1000 students from Lexington, Winchester, Belmont, Arlington, Burlington, Bedford, Woburn, Cambridge, Waltham, Medford, Melrose, Lincoln and Somerville.  To better serve Lexington families, our school is conveniently located at 4 Militia Drive, which is now a designated bus stop thanks to the Lexington Public Schools Transportation Department."], ["updated_at", 2016-08-04 17:09:07 UTC], ["id", 1]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 122ms (ActiveRecord: 4.0ms)
+
+
+  
+NameError (undefined local variable or method `org' for #<OrgsController:0x007f9892c0b930>
+Did you mean?  @org):
+  
+app/controllers/orgs_controller.rb:31:in `update'
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.7ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.8ms)
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (141.1ms)
+Started PATCH "/orgs/1" for ::1 at 2016-08-04 13:09:39 -0400
+Processing by OrgsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lQFCGzKeoCMvdCknhp7jpkm4H0tTf3oBXfn728kXJ8I1o5NzCv28XzahzBe3B3ddSm7bDvhMNdpOdmz3iWisWA==", "org"=>{"org_name"=>"Russian School of Math - Lexington", "org_street"=>"4 Militia Drive, Suite 8 and 9", "org_city"=>"Lexington", "org_state"=>"2", "org_zip"=>"02421", "org_phone"=>"781-859-7444", "org_url"=>"http://www.russianschool.com/location/lexington", "org_email"=>"lexington@russianschool.com", "org_description"=>"Edited Since opening in 2010, RSM-Lexington has leveraged the Russian School of Mathematics' award-winning math curriculum and teaching methodology to help K-12 students build excellence in math and develop lifelong critical thinking skills.\r\nRSM-Lexington is a great learning community where students are not only active participants in their own learning but instrumental in helping their fellow students succeed.Rather than focusing solely on math tutoring in Lexington, RSM provides an enriching classroom experience to push students of all levels ahead.\r\nToday RSM-Lexington enrolls more than 1000 students from Lexington, Winchester, Belmont, Arlington, Burlington, Bedford, Woburn, Cambridge, Waltham, Medford, Melrose, Lincoln and Somerville.  To better serve Lexington families, our school is conveniently located at 4 Militia Drive, which is now a designated bus stop thanks to the Lexington Public Schools Transportation Department.", "org_imageurl"=>"https://dl.dropboxusercontent.com/u/61233574/LexingtonRSM.png", "org_category"=>"1", "org_subcategory"=>"1", "org_tag"=>"award-winning", "org_kidgrade_start"=>"0", "org_kidgrade_end"=>"12", "org_featured"=>"1"}, "commit"=>"Save changes", "id"=>"1"}
+  [1m[36mOrg Load (0.2ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: org_street, org_city, org_state, org_zip, org_phone, org_url, org_email, org_imageurl, org_category, org_subcategory, org_tag, org_kidgrade_start, org_kidgrade_end, org_featured
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/orgs/1
+Completed 302 Found in 54ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/orgs/1" for ::1 at 2016-08-04 13:09:39 -0400
+Processing by OrgsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOrg Load (0.2ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering orgs/show.html.erb within layouts/application
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."org_id" = ?[0m  [["org_id", 1]]
+  Rendered orgs/show.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 63ms (Views: 50.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/orgs/2/edit" for ::1 at 2016-08-04 13:10:20 -0400
+Processing by OrgsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrg Load (0.2ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering orgs/edit.html.erb within layouts/application
+  Rendered orgs/edit.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 48ms (Views: 44.3ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/orgs/2" for ::1 at 2016-08-04 13:10:28 -0400
+Processing by OrgsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/xnkP5HmoV/Tbe+vWeIVoUlnaPk2hCesgYAVzIc36IFfuzVXqYW9I8q4Cp9oe4FaSrGsvJ23aHeSD4Lgx0hjGw==", "org"=>{"org_name"=>"Kidstock", "org_street"=>"50 Cross St", "org_city"=>"Winchester", "org_state"=>"2", "org_zip"=>"01890", "org_phone"=>"781-729-5543", "org_url"=>"https://www.kidstocktheater.com/", "org_email"=>"#", "org_description"=>"Edited We believe every child is a natural storyteller, with the aspirations and ability to perform onstage. Kidstock! provides a safe environment to explore new challenges alongside peers, feel supported by teachers and be surrounded by the ample resources of a professional theater. Every student is a “star” in our productions and we pride ourselves on offering a unique curriculum experience that is as engaging for a “seasoned theater veteran” as it is for a newcomer to the world of the stage.", "org_imageurl"=>"https://dl.dropboxusercontent.com/u/61233574/KidstockWinchester.png", "org_category"=>"1", "org_subcategory"=>"1", "org_tag"=>"#", "org_kidgrade_start"=>"1", "org_kidgrade_end"=>"12", "org_featured"=>"1"}, "commit"=>"Save changes", "id"=>"2"}
+  [1m[36mOrg Load (0.2ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameters: org_street, org_city, org_state, org_zip, org_phone, org_url, org_email, org_imageurl, org_category, org_subcategory, org_tag, org_kidgrade_start, org_kidgrade_end, org_featured
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "orgs" SET "org_description" = ?, "updated_at" = ? WHERE "orgs"."id" = ?[0m  [["org_description", "Edited We believe every child is a natural storyteller, with the aspirations and ability to perform onstage. Kidstock! provides a safe environment to explore new challenges alongside peers, feel supported by teachers and be surrounded by the ample resources of a professional theater. Every student is a “star” in our productions and we pride ourselves on offering a unique curriculum experience that is as engaging for a “seasoned theater veteran” as it is for a newcomer to the world of the stage."], ["updated_at", 2016-08-04 17:10:28 UTC], ["id", 2]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/orgs/2
+Completed 302 Found in 10ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/orgs/2" for ::1 at 2016-08-04 13:10:28 -0400
+Processing by OrgsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrg Load (0.1ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering orgs/show.html.erb within layouts/application
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."org_id" = ?[0m  [["org_id", 2]]
+  Rendered orgs/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 56ms (Views: 31.6ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mOrg Load (2.7ms)[0m  [1m[34mSELECT "orgs".* FROM "orgs"[0m
+Started GET "/orgs/2" for ::1 at 2016-08-04 13:13:35 -0400
+Processing by OrgsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrg Load (0.1ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering orgs/show.html.erb within layouts/application
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."org_id" = ?[0m  [["org_id", 2]]
+  Rendered orgs/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 45ms (Views: 41.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orgs/2/update" for ::1 at 2016-08-04 13:13:40 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/orgs/2/update"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered collection of /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [8 times] (3.1ms)
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (130.9ms)
+Started GET "/orgs/2/edit" for ::1 at 2016-08-04 13:13:49 -0400
+Processing by OrgsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrg Load (0.6ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering orgs/edit.html.erb within layouts/application
+  Rendered orgs/edit.html.erb within layouts/application (8.1ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `merge' for "true":String):
+    22: 		<li>Tags <%= f.text_field :org_tag %></li>
+    23: 		<li>Kid Start Grade <%= f.number_field :org_kidgrade_start %></li>
+    24: 		<li>Kid End Grade <%= f.number_field :org_kidgrade_end %></li>
+    25: 		<li>Featured? <%= f.check_box :org_featured, "true", "false" %></li>
+    26: 		</ul>
+    27: 
+    28:       <%= f.submit "Save changes", class: "btn btn-primary" %>
+  
+app/views/orgs/edit.html.erb:25:in `block in _app_views_orgs_edit_html_erb___2765148535554172536_70146613581800'
+app/views/orgs/edit.html.erb:6:in `_app_views_orgs_edit_html_erb___2765148535554172536_70146613581800'
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.4ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (105.5ms)
+Started GET "/orgs/2/edit" for ::1 at 2016-08-04 13:14:15 -0400
+Processing by OrgsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrg Load (0.4ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering orgs/edit.html.erb within layouts/application
+  Rendered orgs/edit.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `merge' for 1:Fixnum):
+    22: 		<li>Tags <%= f.text_field :org_tag %></li>
+    23: 		<li>Kid Start Grade <%= f.number_field :org_kidgrade_start %></li>
+    24: 		<li>Kid End Grade <%= f.number_field :org_kidgrade_end %></li>
+    25: 		<li>Featured? <%= f.check_box :org_featured, 1, 0 %></li>
+    26: 		</ul>
+    27: 
+    28:       <%= f.submit "Save changes", class: "btn btn-primary" %>
+  
+app/views/orgs/edit.html.erb:25:in `block in _app_views_orgs_edit_html_erb___2765148535554172536_70146631771140'
+app/views/orgs/edit.html.erb:6:in `_app_views_orgs_edit_html_erb___2765148535554172536_70146631771140'
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.3ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/yumio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (103.1ms)
+Started GET "/orgs/2/edit" for ::1 at 2016-08-04 13:18:16 -0400
+Processing by OrgsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrg Load (0.2ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering orgs/edit.html.erb within layouts/application
+  Rendered orgs/edit.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 50ms (Views: 45.6ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/orgs/2" for ::1 at 2016-08-04 13:18:25 -0400
+Processing by OrgsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VoB4gPVPphvSSUTmvXEbjE7kjehz/6xTA2xjIN4PoKD2IqnozSy6Z8ucodaM6I93TTJJrdjM44gQ4/QMnnArOg==", "org"=>{"org_name"=>"Kidstock", "org_street"=>"50 Cross St", "org_city"=>"Winchester", "org_state"=>"2", "org_zip"=>"01890", "org_phone"=>"781-729-5543", "org_url"=>"https://www.kidstocktheater.com/", "org_email"=>"#", "org_description"=>"Edited We believe every child is a natural storyteller, with the aspirations and ability to perform onstage. Kidstock! provides a safe environment to explore new challenges alongside peers, feel supported by teachers and be surrounded by the ample resources of a professional theater. Every student is a “star” in our productions and we pride ourselves on offering a unique curriculum experience that is as engaging for a “seasoned theater veteran” as it is for a newcomer to the world of the stage.", "org_imageurl"=>"https://dl.dropboxusercontent.com/u/61233574/KidstockWinchester.png", "org_category"=>"1", "org_subcategory"=>"1", "org_tag"=>"#", "org_kidgrade_start"=>"1", "org_kidgrade_end"=>"12", "org_featured"=>"1"}, "commit"=>"Save changes", "id"=>"2"}
+  [1m[36mOrg Load (0.4ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameters: org_street, org_city, org_state, org_zip, org_phone, org_url, org_email, org_imageurl, org_category, org_subcategory, org_tag, org_kidgrade_start, org_kidgrade_end, org_featured
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/orgs/2
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/orgs/2" for ::1 at 2016-08-04 13:18:25 -0400
+Processing by OrgsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrg Load (0.4ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering orgs/show.html.erb within layouts/application
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."org_id" = ?[0m  [["org_id", 2]]
+  Rendered orgs/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 134ms (Views: 29.6ms | ActiveRecord: 0.6ms)
+
+
+  [1m[36mOrg Load (0.4ms)[0m  [1m[34mSELECT "orgs".* FROM "orgs"[0m
+Started GET "/orgs/2/edit" for ::1 at 2016-08-04 13:19:20 -0400
+Processing by OrgsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrg Load (0.6ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering orgs/edit.html.erb within layouts/application
+  Rendered orgs/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 34ms (Views: 31.1ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/orgs/2" for ::1 at 2016-08-04 13:19:27 -0400
+Processing by OrgsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cx365K8naOzhTgteBTNOUZHr1PD6whGUGEKoNntWFDTTvyuMl0R0kPib7m40qtqqkj0QtVHxXk8LzT8aOymfrg==", "org"=>{"org_name"=>"Kidstock!", "org_street"=>"50 Cross St", "org_city"=>"Winchester", "org_state"=>"2", "org_zip"=>"01890", "org_phone"=>"781-729-5543", "org_url"=>"https://www.kidstocktheater.com/", "org_email"=>"#", "org_description"=>"Edited We believe every child is a natural storyteller, with the aspirations and ability to perform onstage. Kidstock! provides a safe environment to explore new challenges alongside peers, feel supported by teachers and be surrounded by the ample resources of a professional theater. Every student is a “star” in our productions and we pride ourselves on offering a unique curriculum experience that is as engaging for a “seasoned theater veteran” as it is for a newcomer to the world of the stage.", "org_imageurl"=>"https://dl.dropboxusercontent.com/u/61233574/KidstockWinchester.png", "org_category"=>"1", "org_subcategory"=>"1", "org_tag"=>"#", "org_kidgrade_start"=>"1", "org_kidgrade_end"=>"12", "org_featured"=>"0"}, "commit"=>"Save changes", "id"=>"2"}
+  [1m[36mOrg Load (0.3ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameters: org_street, org_city, org_state, org_zip, org_phone, org_url, org_email, org_imageurl, org_category, org_subcategory, org_tag, org_kidgrade_start, org_kidgrade_end, org_featured
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "orgs" SET "org_name" = ?, "updated_at" = ? WHERE "orgs"."id" = ?[0m  [["org_name", "Kidstock!"], ["updated_at", 2016-08-04 17:19:27 UTC], ["id", 2]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/orgs/2
+Completed 302 Found in 7ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/orgs/2" for ::1 at 2016-08-04 13:19:27 -0400
+Processing by OrgsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrg Load (0.2ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering orgs/show.html.erb within layouts/application
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."org_id" = ?[0m  [["org_id", 2]]
+  Rendered orgs/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 46ms (Views: 42.7ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mOrg Load (1.9ms)[0m  [1m[34mSELECT "orgs".* FROM "orgs"[0m
+Started PATCH "/orgs/2" for ::1 at 2016-08-04 13:20:29 -0400
+Processing by OrgsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cx365K8naOzhTgteBTNOUZHr1PD6whGUGEKoNntWFDTTvyuMl0R0kPib7m40qtqqkj0QtVHxXk8LzT8aOymfrg==", "org"=>{"org_name"=>"Kidstock!", "org_street"=>"50 Cross St.", "org_city"=>"Winchester", "org_state"=>"2", "org_zip"=>"01890", "org_phone"=>"781-729-5543", "org_url"=>"https://www.kidstocktheater.com/", "org_email"=>"#", "org_description"=>"Edited We believe every child is a natural storyteller, with the aspirations and ability to perform onstage. Kidstock! provides a safe environment to explore new challenges alongside peers, feel supported by teachers and be surrounded by the ample resources of a professional theater. Every student is a “star” in our productions and we pride ourselves on offering a unique curriculum experience that is as engaging for a “seasoned theater veteran” as it is for a newcomer to the world of the stage.", "org_imageurl"=>"https://dl.dropboxusercontent.com/u/61233574/KidstockWinchester.png", "org_category"=>"3", "org_subcategory"=>"3", "org_tag"=>"", "org_kidgrade_start"=>"1", "org_kidgrade_end"=>"12", "org_featured"=>"0"}, "commit"=>"Save changes", "id"=>"2"}
+  [1m[36mOrg Load (0.2ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameters: org_street, org_city, org_state, org_zip, org_phone, org_url, org_email, org_imageurl, org_category, org_subcategory, org_tag, org_kidgrade_start, org_kidgrade_end, org_featured
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/orgs/2
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/orgs/2" for ::1 at 2016-08-04 13:20:29 -0400
+Processing by OrgsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrg Load (0.3ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering orgs/show.html.erb within layouts/application
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."org_id" = ?[0m  [["org_id", 2]]
+  Rendered orgs/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 39ms (Views: 34.8ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mOrg Load (1.6ms)[0m  [1m[34mSELECT "orgs".* FROM "orgs"[0m
+Started GET "/orgs/2/edit" for ::1 at 2016-08-04 13:21:02 -0400
+Processing by OrgsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrg Load (0.2ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering orgs/edit.html.erb within layouts/application
+  Rendered orgs/edit.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 35ms (Views: 31.5ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/orgs/2" for ::1 at 2016-08-04 13:21:08 -0400
+Processing by OrgsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x2zl0th5YvsZBA/l+mvoexG04vwLLanHq9BY+7EPG1pnzjS64Bp+hwDR6tXL8nyAEmImuaAe5hy4X8/X8XCQwA==", "org"=>{"org_name"=>"Kidstock!", "org_street"=>"50 Cross St.", "org_city"=>"Winchester", "org_state"=>"2", "org_zip"=>"01890", "org_phone"=>"781-729-5543", "org_url"=>"https://www.kidstocktheater.com/", "org_email"=>"#", "org_description"=>"Edited We believe every child is a natural storyteller, with the aspirations and ability to perform onstage. Kidstock! provides a safe environment to explore new challenges alongside peers, feel supported by teachers and be surrounded by the ample resources of a professional theater. Every student is a “star” in our productions and we pride ourselves on offering a unique curriculum experience that is as engaging for a “seasoned theater veteran” as it is for a newcomer to the world of the stage.", "org_imageurl"=>"https://dl.dropboxusercontent.com/u/61233574/KidstockWinchester.png", "org_category"=>"1", "org_subcategory"=>"1", "org_tag"=>"#", "org_kidgrade_start"=>"1", "org_kidgrade_end"=>"12", "org_featured"=>"0"}, "commit"=>"Save changes", "id"=>"2"}
+  [1m[36mOrg Load (0.2ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameters: org_street, org_city, org_state, org_zip, org_phone, org_url, org_email, org_imageurl, org_category, org_subcategory, org_tag, org_kidgrade_start, org_kidgrade_end, org_featured
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/orgs/2
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/orgs/2" for ::1 at 2016-08-04 13:21:08 -0400
+Processing by OrgsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrg Load (0.1ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering orgs/show.html.erb within layouts/application
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."org_id" = ?[0m  [["org_id", 2]]
+  Rendered orgs/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 40ms (Views: 35.2ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mOrg Load (0.7ms)[0m  [1m[34mSELECT "orgs".* FROM "orgs"[0m
+Started GET "/orgs/2/edit" for ::1 at 2016-08-04 13:24:01 -0400
+Processing by OrgsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrg Load (0.1ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering orgs/edit.html.erb within layouts/application
+  Rendered orgs/edit.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 56ms (Views: 33.4ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/orgs/2" for ::1 at 2016-08-04 13:24:20 -0400
+Processing by OrgsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RF05kZmVgoYGhQzv8dg0Bn4jrVrFhEMbO8orJMQAoq/k/+j5ofae+h9Q6d/AQaD9ffVpH263DMAoRbwIhH8pNQ==", "org"=>{"org_name"=>"Kidstock!", "org_street"=>"50 Cross St.", "org_city"=>"Winchester", "org_state"=>"2", "org_zip"=>"01890", "org_phone"=>"781-729-5543", "org_url"=>"https://www.kidstocktheater.com/", "org_email"=>"#", "org_description"=>"Edited We believe every child is a natural storyteller, with the aspirations and ability to perform onstage. Kidstock! provides a safe environment to explore new challenges alongside peers, feel supported by teachers and be surrounded by the ample resources of a professional theater. Every student is a “star” in our productions and we pride ourselves on offering a unique curriculum experience that is as engaging for a “seasoned theater veteran” as it is for a newcomer to the world of the stage.", "org_imageurl"=>"https://dl.dropboxusercontent.com/u/61233574/KidstockWinchester.png", "org_category"=>"3", "org_subcategory"=>"1", "org_tag"=>"#", "org_kidgrade_start"=>"1", "org_kidgrade_end"=>"12", "org_featured"=>"1"}, "commit"=>"Save changes", "id"=>"2"}
+  [1m[36mOrg Load (0.1ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "orgs" SET "org_street" = ?, "org_state" = ?, "org_category" = ?, "org_subcategory" = ?, "org_featured" = ?, "updated_at" = ? WHERE "orgs"."id" = ?[0m  [["org_street", "50 Cross St."], ["org_state", "2"], ["org_category", "3"], ["org_subcategory", "1"], ["org_featured", true], ["updated_at", 2016-08-04 17:24:20 UTC], ["id", 2]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/orgs/2
+Completed 302 Found in 9ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/orgs/2" for ::1 at 2016-08-04 13:24:20 -0400
+Processing by OrgsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrg Load (0.1ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering orgs/show.html.erb within layouts/application
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."org_id" = ?[0m  [["org_id", 2]]
+  Rendered orgs/show.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 60ms (Views: 51.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/orgs/2" for ::1 at 2016-08-04 13:25:32 -0400
+Processing by OrgsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrg Load (0.1ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering orgs/show.html.erb within layouts/application
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."org_id" = ?[0m  [["org_id", 2]]
+  Rendered orgs/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 39ms (Views: 35.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orgs/2/edit" for ::1 at 2016-08-04 13:25:35 -0400
+Processing by OrgsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrg Load (0.4ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering orgs/edit.html.erb within layouts/application
+  Rendered orgs/edit.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 56ms (Views: 52.4ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/orgs/2" for ::1 at 2016-08-04 13:25:43 -0400
+Processing by OrgsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z+4+6Oy5pBff5uOvBdTbS7eS3qRbBYV7xGDr5tE5Mn/HTO+A1Nq4a8YzBp80TU+wtEQa4fA2yqDX73zKkUa55Q==", "org"=>{"org_name"=>"Kidstock!", "org_street"=>"50 Cross St.", "org_city"=>"Winchester", "org_state"=>"MA", "org_zip"=>"01890", "org_phone"=>"781-729-5543", "org_url"=>"https://www.kidstocktheater.com/", "org_email"=>"#", "org_description"=>"Edited We believe every child is a natural storyteller, with the aspirations and ability to perform onstage. Kidstock! provides a safe environment to explore new challenges alongside peers, feel supported by teachers and be surrounded by the ample resources of a professional theater. Every student is a “star” in our productions and we pride ourselves on offering a unique curriculum experience that is as engaging for a “seasoned theater veteran” as it is for a newcomer to the world of the stage.", "org_imageurl"=>"https://dl.dropboxusercontent.com/u/61233574/KidstockWinchester.png", "org_category"=>"1", "org_subcategory"=>"1", "org_tag"=>"#", "org_kidgrade_start"=>"1", "org_kidgrade_end"=>"12", "org_featured"=>"1"}, "commit"=>"Save changes", "id"=>"2"}
+  [1m[36mOrg Load (0.4ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "orgs" SET "org_state" = ?, "org_category" = ?, "updated_at" = ? WHERE "orgs"."id" = ?[0m  [["org_state", "MA"], ["org_category", "1"], ["updated_at", 2016-08-04 17:25:43 UTC], ["id", 2]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/orgs/2
+Completed 302 Found in 10ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/orgs/2" for ::1 at 2016-08-04 13:25:43 -0400
+Processing by OrgsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrg Load (0.5ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering orgs/show.html.erb within layouts/application
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."org_id" = ?[0m  [["org_id", 2]]
+  Rendered orgs/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 51ms (Views: 46.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/orgs/2" for ::1 at 2016-08-04 13:27:56 -0400
+Processing by OrgsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrg Load (0.9ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering orgs/show.html.erb within layouts/application
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."org_id" = ?[0m  [["org_id", 2]]
+  Rendered orgs/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 44ms (Views: 39.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/orgs/2/edit" for ::1 at 2016-08-04 13:28:19 -0400
+Processing by OrgsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrg Load (0.2ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering orgs/edit.html.erb within layouts/application
+  Rendered orgs/edit.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orgs/2/edit" for ::1 at 2016-08-04 13:28:41 -0400
+Processing by OrgsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrg Load (0.2ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering orgs/edit.html.erb within layouts/application
+  Rendered orgs/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 35ms (Views: 32.6ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/orgs/2" for ::1 at 2016-08-04 13:28:50 -0400
+Processing by OrgsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"87Ys5gzmFu/X42Ho9T4dtiqQnrDoNyge8Duie2VmeyRTFP2ONIUKk842hNjEp4lNKUZa9UMEZ8XjtDVXJRnwvg==", "org"=>{"org_name"=>"Kidstock!", "org_street"=>"50 Cross St.", "org_city"=>"Winchester", "org_state"=>"MA", "org_zip"=>"01890", "org_phone"=>"781-729-5543", "org_url"=>"https://www.kidstocktheater.com/", "org_email"=>"#", "org_description"=>"Edited We believe every child is a natural storyteller, with the aspirations and ability to perform onstage. Kidstock! provides a safe environment to explore new challenges alongside peers, feel supported by teachers and be surrounded by the ample resources of a professional theater. Every student is a “star” in our productions and we pride ourselves on offering a unique curriculum experience that is as engaging for a “seasoned theater veteran” as it is for a newcomer to the world of the stage.", "org_imageurl"=>"https://dl.dropboxusercontent.com/u/61233574/KidstockWinchester.png", "org_category"=>"Arts", "org_subcategory"=>"Theater", "org_tag"=>"#", "org_kidgrade_start"=>"1", "org_kidgrade_end"=>"12", "org_featured"=>"1"}, "commit"=>"Save changes", "id"=>"2"}
+  [1m[36mOrg Load (0.1ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "orgs" SET "org_category" = ?, "org_subcategory" = ?, "updated_at" = ? WHERE "orgs"."id" = ?[0m  [["org_category", "Arts"], ["org_subcategory", "Theater"], ["updated_at", 2016-08-04 17:28:50 UTC], ["id", 2]]
+  [1m[35m (423.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/orgs/2
+Completed 302 Found in 430ms (ActiveRecord: 423.9ms)
+
+
+Started GET "/orgs/2" for ::1 at 2016-08-04 13:28:50 -0400
+Processing by OrgsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrg Load (0.2ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering orgs/show.html.erb within layouts/application
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."org_id" = ?[0m  [["org_id", 2]]
+  Rendered orgs/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 46ms (Views: 42.6ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mOrg Load (1.6ms)[0m  [1m[34mSELECT "orgs".* FROM "orgs"[0m
+Started GET "/orgs/2" for ::1 at 2016-08-04 14:11:42 -0400
+Processing by OrgsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrg Load (0.2ms)[0m  [1m[34mSELECT  "orgs".* FROM "orgs" WHERE "orgs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering orgs/show.html.erb within layouts/application
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."org_id" = ?[0m  [["org_id", 2]]
+  Rendered orgs/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 45ms (Views: 40.0ms | ActiveRecord: 0.5ms)
+
+

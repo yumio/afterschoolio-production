@@ -1,0 +1,28 @@
+<%= form_for(@org) do |f| %>
+<ul>
+<%= f.label :org %> <br>
+<li> Org Name <%= f.text_field :org_name %></li>
+Address
+<li>Street <%= f.text_field :org_street %></li>
+<li>City <%= f.text_field :org_city %></li>
+<li>State <%= f.select(:org_state, options_for_select([["CA"],["MA"],["NY"],["NJ"]] ,"MA")) %></li>
+<li>Zip <%= f.text_field :org_zip %></li>
+<li>Phone <%= f.telephone_field :org_phone %></li>
+<li>URL <%= f.url_field :org_url, size: "40" %></li>
+<li>Email <%= f.text_field :org_email %></li>
+<li>Description <%= f.text_area :org_description, size: "50x10" %></li>
+<li>Image URL <%= f.url_field :org_imageurl %></li>
+<li>Category <%= f.select(:org_category, options_for_select([["Academics"],["Sports"],["Arts"],["Music"]])) %></li>
+<li>SubCategory <%= f.select(:org_subcategory, options_for_select([["Math"],["Foreign Language"],["Dance"],["Theater"],["Piano"]])) %></li>
+<li>Tags <%= f.text_field :org_tag %></li>
+<li>Kid Start Grade <%= f.number_field :org_kidgrade_start %></li>
+<li>Kid End Grade <%= f.number_field :org_kidgrade_end %></li>
+<li>Featured? <%= f.check_box :org_featured %></li>
+</ul>
+
+<div class="actions">
+
+	<%= f.submit "Create" %>
+</div>
+
+<% end %>
