@@ -10,13 +10,41 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160727235354) do
+ActiveRecord::Schema.define(version: 20160803182243) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
     t.text     "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "orgs", force: :cascade do |t|
+    t.string   "org_name"
+    t.string   "org_street"
+    t.string   "org_city"
+    t.string   "org_state"
+    t.string   "org_zip"
+    t.string   "org_phone"
+    t.string   "org_url"
+    t.string   "org_email"
+    t.string   "org_description"
+    t.string   "org_imageurl"
+    t.string   "org_category"
+    t.string   "org_subcategory"
+    t.string   "org_tag"
+    t.string   "org_kidgrade"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.string   "review_author"
+    t.string   "review_content"
+    t.integer  "org_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.index ["org_id"], name: "index_reviews_on_org_id"
   end
 
 end
