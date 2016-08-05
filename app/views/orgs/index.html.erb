@@ -1,24 +1,133 @@
+<div class="main">
+        <div class="main-inner">
+            <div class="container">
+                <div class="content">
+                    
+    <div class="document-title">
+        <h1>After School Activities</h1>
+
+        <ul class="breadcrumb">
+            <li><a href="#">Previous</a></li>
+            <li><a href="#">Next</a></li>
+        </ul>
+    </div><!-- /.document-title -->
+
+
+
+                    <form class="filter" method="post" action="?">
+    <div class="row">
+        <div class="col-sm-12 col-md-4">
+            <div class="form-group">
+                <input type="text" placeholder="Keyword" class="form-control">
+            </div><!-- /.form-group -->
+        </div><!-- /.col-* -->
+
+        <div class="col-sm-12 col-md-4">
+            <div class="form-group">
+                <select class="form-control" title="Select Location">
+                    <option>Bronx</option>
+                    <option>Brooklyn</option>
+                    <option>Manhattan</option>
+                    <option>Staten Island</option>
+                    <option>Queens</option>
+                </select>
+            </div><!-- /.form-group -->
+        </div><!-- /.col-* -->
+
+        <div class="col-sm-12 col-md-4">
+            <div class="form-group">
+                <select class="form-control" title="Select Category">
+                    <option value="">Automotive</option>
+                    <option value="">Jobs</option>
+                    <option value="">Nightlife</option>
+                    <option value="">Services</option>
+                </select>
+            </div><!-- /.form-group -->
+        </div><!-- /.col-* -->
+    </div><!-- /.row -->
+
+    <hr>
+
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="filter-actions">
+                <a href="#"><i class="fa fa-close"></i> Reset Filter</a>
+                <a href="#"><i class="fa fa-save"></i> Save Search</a>
+            </div><!-- /.filter-actions -->
+        </div><!-- /.col-* -->
+
+        <div class="col-sm-4">
+            <button type="submit" class="btn btn-primary">Redefine Search Result</button>
+        </div><!-- /.col-* -->
+    </div><!-- /.row -->
+</form>
+
+
+<h2 class="page-title">
+    1802 results matching your query
+
+    <form method="get" action="?" class="filter-sort">
+        <div class="form-group">
+            <select title="Sort by">
+                <option name="price">Price</option>
+                <option name="rating">Rating</option>
+                <option name="title">Title</option>
+            </select>
+        </div><!-- /.form-group -->
+                
+        <div class="form-group">
+            <select title="Order">
+                <option name="ASC">Asc</option>
+                <option name="DESC">Desc</option>
+            </select>
+        </div><!-- /.form-group -->
+    </form>
+</h2><!-- /.page-title -->
 <% @orgs.each do |org| %>
-<div class="col-md-3">
-	<ul>
-		<li><%= org.org_name %></li>
-		<li><%= org.org_street %></li>
-		<li><%= org.org_city %></li>
-		<li><%= org.org_state %></li>
-		<li><%= org.org_zip %></li>
-		<li><%= org.org_phone %></li>
-		<li><%= org.org_url %></li>
-		<li><%= org.org_email %></li>
-		<li><%= org.org_category %></li>
-		<li><%= org.org_subcategory %></li>
-		<li><%= org.org_kidgrade_start %></li>
-		<li><%= org.org_kidgrade_end %></li>
-	</ul>
-	<img src=<%= org.org_imageurl %> >
-    <p><%= org.org_description %><p>
+<div class="cards-row">
+    
+        <div class="card-row">
+            <div class="card-row-inner">
+                <div class="card-row-image" data-background-image=<%= org.org_imageurl %> >
+                    <div class="card-row-label"><%= link_to "Go To", org %>
+
+</div><!-- /.card-row-label -->
+                    
+                        <div class="card-row-price">Featured</div><!-- -->
+                    
+                </div><!-- /.card-row-image -->
+
+                <div class="card-row-body">
+                    <h2 class="card-row-title"><a href="listing-detail.html"><%= org.org_name %></a></h2>
+                    <div class="card-row-content"><p><%= org.org_description %>.</p></div><!-- /.card-row-content -->
+                </div><!-- /.card-row-body -->
+
+                <div class="card-row-properties">
+                    <dl>
+                        
+                            <dd>Category/dd><dt><%= org.org_category %></dt>
+                       
+                            <dd>Sub-Category</dd><dt><%= org.org_subcategory %></dt>
+
+                            <dd>Location</dd><dt><%= org.org_city %></dt>
+                            <dd>Grades</dd><dt><%= org.org_kidgrade_start %> to <%= org.org_kidgrade_end %> </dt>
+                        
+                        <dd>Rating</dd>
+                        <dt>
+                            <div class="card-row-rating">
+                                <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                            </div><!-- /.card-row-rating -->
+                        </dt>
+                    </dl>
+                </div><!-- /.card-row-properties -->
+            </div><!-- /.card-row-inner -->
+        </div><!-- /.card-row -->
+<% end %>
+
+
 
 </div>
 
 
 
-<% end  %>
+
